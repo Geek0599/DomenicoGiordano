@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<title>Pagina iniziale</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240522171327">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap&_v=20240522171327" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#1d85a2">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div data-lp class="header__wrapper">
+				<div class="header__container">
+					<a href="#" class="header__logo logo">
+						<img width="264" height="49" fetchpriority="high" loading="eager" decoding="async" src="img/logo/logo.svg" alt="Logo Domenico Giordano">
+					</a>
+					<div class="header__menu menu">
+						<nav data-submenu-spollers class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">La nostra storia</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">La lavorazione</a>
+								</li>
+								<li data-submenu-spoller class="menu__item">
+									<a href="#" class="menu__link">Prodotti</a>
+									<button aria-label="Pulsante di apertura sotto il menu" data-submenu-link class="menu__spoller-arrow icon-arrow"></button>
+									<div data-submenu class="sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Placca gigante</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Placca fuori misura</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Occhio di pernice</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Video</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Contatti</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions header-actions">
+						<div class="header-actions__lang">
+							<button data-toggle class="header-actions__lang icon-arrow">IT</button>
+							<div class="sub-menu">
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">EN</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button aria-label="Pulsante per aprire il menu Mobile" type="button" class="header-actions__icon icon-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main-section main-section">
+				<div class="main-section__container">
+					<div class="main-section__content main-content">
+						<h1 class="main-content__title main-title">Lavorazione Radica</h1>
+						<h2 class="main-content__sub-title sub-title">Briar Pipe</h2>
+						<div class="main-content__text text-lh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </div>
+						<a href="#" class="main-content__btn btn">Leggi tutto</a>
+					</div>
+				</div>
+				<div class="main-section__video-bg">
+					<video autoplay muted loop playsinline preload="auto">
+						<source src="files/main-bg.webm" type="video/webm">
+						<source src="files/main-bg.mp4" type="video/mp4">
+					</video>
+				</div>
+			</section>
+			<section class="page__history history">
+				<div class="history__body bg-dark elem-indent">
+					<div class="history__container">
+						<div class="history__content">
+							<h2 class="history__title title">La nostra storia</h2>
+							<div class="history__text text-lh">
+								<p>La Giordano Briar SRL è il frutto della passione , dell'esperienza e dell'affidabilità tramandata da Nonno Mimmo. </p>
+								<p>Nasce nel 1968 la ditta individuale di Giordano Domenico , conosciuto da tutti come Mimmo : forti radici che , con amore , passione e sacrifici hanno dato vita ad un'azienda leader in questo settore.
+								</p>
+							</div>
+							<a href="#" class="history__btn btn btn--yellow">Scopri la nostra storia</a>
+						</div>
+						<div class="history__image-description">
+							<a href="img/backgrounds/history.jpg" data-fancybox class="history__img-ibg">
+								<picture><source srcset="img/backgrounds/history.webp" type="image/webp"><img width="288" height="170" loading="lazy" decoding="async" src="img/backgrounds/history.jpg" alt="Foto di famiglia"></picture>
+							</a>
+							<div class="history__img-caption text-lh-small caption">
+								<div class="caption__name">Domenico Giordano</div>
+								<q class="caption__quote">“Domenico Giordano esperto tagliatore da due generazioni, prepara abbozzi di qualità per le migliori pipe.”</q>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__workflow elem-indent workflow">
+				<div class="workflow__container">
+					<div class="workflow__top elem-mb section-top">
+						<h2 class="section-top__title title">La lavorazione</h2>
+						<div class="section-top__text text-lh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+						<a href="#" class="section-top__btn btn">Scopri di più</a>
+					</div>
+					<div class="workflow__body">
+						<div class="workflow__video video-card">
+							<div data-video-body class="video-card__body _paused">
+								<video loop playsinline preload="metadata">
+									<source src="files/processing-bg.webm" type="video/webm">
+									<source src="files/processing-bg.mp4" type="video/mp4">
+									<p>Il vostro browser non supporta il tag video, ma potete <a href="files/processing-bg.mp4">scaricarlo</a> e guardarlo con il vostro lettore video preferito.</p>
+								</video>
+								<button data-playicon-btn aria-label="Play video icon" class="video-card__video-btn icon-play">Play video</button>
+							</div>
+						</div>
+						<div class="workflow__images">
+							<a href="img/processing/01.jpg" data-fancybox="gallery" class="workflow__image-ibg">
+								<picture><source srcset="img/processing/01.webp" type="image/webp"><img width="288" height="180" loading="lazy" decoding="async" src="img/processing/01.jpg" alt="Flusso di lavoro della movimentazione dei materiali"></picture>
+							</a>
+							<a href="img/processing/02.jpg" data-fancybox="gallery" class="workflow__image-ibg">
+								<picture><source srcset="img/processing/02.webp" type="image/webp"><img width="288" height="180" loading="lazy" decoding="async" src="img/processing/02.jpg" alt="Flusso di lavoro della movimentazione dei materiali"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products-slider bg--yellow elem-indent products-slider">
+				<div class="products-slider__content products-slider-content">
+					<div class="products-slider__container">
+						<div class="products-slider__content-body">
+							<h2 class="products-slider-content__title title">I nostri prodotti</h2>
+							<div class="products-slider-content__text text-lh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+							<a href="#" class="products-slider-content__btn btn">Scopri di più</a>
+						</div>
+					</div>
+				</div>
+				<div class="products-slider__slider-body">
+					<div data-slider="product" class="products-slider__slider">
+						<div data-slider class="slider swiper">
+							<div class="slider__wrapper swiper-wrapper">
+								<div class="slider__slide swiper-slide">
+									<a href="#" class="slider__img-slide-ibg">
+										<picture><source srcset="img/products/01.webp" type="image/webp"><img width="288" height="170" loading="lazy" decoding="async" src="img/products/01.jpg" alt="Prodotto"></picture>
+									</a>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<a href="#" class="slider__img-slide-ibg">
+										<picture><source srcset="img/products/02.webp" type="image/webp"><img width="288" height="170" loading="lazy" decoding="async" src="img/products/02.jpg" alt="Prodotto"></picture>
+									</a>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<a href="#" class="slider__img-slide-ibg">
+										<picture><source srcset="img/products/03.webp" type="image/webp"><img width="288" height="170" loading="lazy" decoding="async" src="img/products/03.jpg" alt="Prodotto"></picture>
+									</a>
+								</div>
+								<div class="slider__slide swiper-slide">
+									<a href="#" class="slider__img-slide-ibg">
+										<picture><source srcset="img/products/01.webp" type="image/webp"><img width="288" height="170" loading="lazy" decoding="async" src="img/products/01.jpg" alt="Prodotto"></picture>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div data-slider-scrollbar class="products-slider__scrollbar slider-scrollbar"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo logo">
+						<img width="264" height="49" loading="lazy" decoding="async" src="img/logo/logo-w.svg" alt="Logo Domenico Giordano">
+					</a>
+					<div class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">La nostra storia</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">La lavorazione</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Prodotti</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Video</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contatti</a>
+							</li>
+						</ul>
+						<ul class="menu-footer__list footer-contact">
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link icon-location">GIORDANO BRIAR s.r.l. Strada Poggio n° 25 18010 Badalucco (IM)</a>
+							</li>
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link icon-document">P.IVA 01752740082</a>
+							</li>
+							<li class="footer-contact__item">
+								<a href="#" class="footer-contact__link icon-phone">339 2601878</a>
+							</li>
+							<li class="footer-contact__item">
+								<a href="mailto:info@giordanopipe.it" class="footer-contact__link icon-mail">info@giordanopipe.it</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copyright text-ultra-small"> © All Rights Reserved | Privacy Terms</div>
+			</div>
+		</footer>
+	</div>
+	<script async src="js/app.min.js?_v=20240522171327"></script>
+</body>
+
+</html>
