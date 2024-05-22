@@ -3467,7 +3467,7 @@
             }
         }
     }
-    window.addEventListener("load", (function(e) {
+    window.addEventListener("DOMContentLoaded ", (function(e) {
         productSlider();
         mainProductSlider();
     }));
