@@ -3991,6 +3991,10 @@ html.with-fancybox body.hide-scrollbar {
     max-width: unset;
   }
 
+  .products-slider__slider .slider {
+    overflow: visible;
+  }
+
   .content-info__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
