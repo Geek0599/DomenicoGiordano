@@ -3432,6 +3432,7 @@
     }
     function mainProductSlider() {
         const sliderBlock = document.querySelector('[data-slider="main-products"]');
+        console.log(sliderBlock);
         if (sliderBlock) {
             const slider = sliderBlock.querySelector(`[data-slider]`);
             const sliderScrollbar = sliderBlock.querySelector("[data-slider-scrollbar]");
@@ -3467,10 +3468,8 @@
             }
         }
     }
-    window.addEventListener("DOMContentLoaded ", (function(e) {
-        productSlider();
-        mainProductSlider();
-    }));
+    productSlider();
+    mainProductSlider();
     let addWindowScrollEvent = false;
     function headerScroll() {
         addWindowScrollEvent = true;
