@@ -3432,7 +3432,6 @@
     }
     function mainProductSlider() {
         const sliderBlock = document.querySelector('[data-slider="main-products"]');
-        console.log(sliderBlock);
         if (sliderBlock) {
             const slider = sliderBlock.querySelector(`[data-slider]`);
             const sliderScrollbar = sliderBlock.querySelector("[data-slider-scrollbar]");
@@ -8238,6 +8237,7 @@
     playVideoOnClickPlayBtn();
     removeVideoCoverOnFullscreen();
     initFancyBox();
+    hideVideoControlls();
     function showHideSubMenu() {
         const subMenuItemsWrapper = document.querySelector("[data-submenu-spollers]");
         if (subMenuItemsWrapper) {
@@ -8360,8 +8360,22 @@
             }
         }));
     }
+    function hideVideoControlls() {
+        const videoBg = document.getElementById("video-bg");
+        if (videoBg) {
+            videoBg.removeAttribute("controls");
+            videoBg.play();
+            videoBg.controls = false;
+            videoBg.addEventListener("play", (function() {
+                this.controls = false;
+            }));
+            videoBg.addEventListener("pause", (function() {
+                this.controls = false;
+            }));
+        }
+    }
     function initFancyBox() {
-        Oe.bind("[data-fancybox]", {
+        if (document.querySelector("[data-fancybox]")) Oe.bind("[data-fancybox]", {
             contentClick: "iterateZoom",
             Images: {
                 Panzoom: {
@@ -8369,7 +8383,7 @@
                 }
             }
         });
-        Oe.bind('[data-fancybox="gallery"]', {
+        if (document.querySelector('[data-fancybox="gallery"]')) Oe.bind('[data-fancybox="gallery"]', {
             contentClick: "iterateZoom",
             Images: {
                 Panzoom: {
@@ -8377,7 +8391,15 @@
                 }
             }
         });
-        Oe.bind('[data-fancybox="gallery-slider"]', {
+        if (document.querySelector('[data-fancybox="products"]')) Oe.bind('[data-fancybox="gallery"]', {
+            contentClick: "iterateZoom",
+            Images: {
+                Panzoom: {
+                    maxScale: 2
+                }
+            }
+        });
+        if (document.querySelector('[data-fancybox="gallery-slider"]')) Oe.bind('[data-fancybox="gallery-slider"]', {
             contentClick: "iterateZoom",
             Images: {
                 Panzoom: {

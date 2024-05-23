@@ -653,6 +653,40 @@ Snippet (HTML): cnt
   margin-top: 0.625rem;
 }
 
+#video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+#video-bg::-moz-media-controls {
+  display: none !important;
+}
+
+#video-bg::-ms-media-controls {
+  display: none !important;
+}
+
+#video-bg::-o-media-controls {
+  display: none !important;
+}
+
+#video-bg::-media-controls {
+  display: none !important;
+}
+
+#video-bg::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+#video-bg::-webkit-media-controls {
+  display: none !important;
+}
+
+#video-bg::-webkit-media-controls-start-playback-button,
+#video-bg::-webkit-media-controls,
+#video-bg::-webkit-media-controls-panel {
+  display: none !important;
+}
+
 .header {
   position: relative;
   z-index: 10;
